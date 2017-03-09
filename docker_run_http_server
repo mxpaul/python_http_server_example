@@ -1,0 +1,1 @@
+docker run --name py_http_srv -it --rm --network=host -e "CROP_HTTP_PORT=9000" -w="/data" -v `pwd`/data:/data python:2.7 python http_server.py 
